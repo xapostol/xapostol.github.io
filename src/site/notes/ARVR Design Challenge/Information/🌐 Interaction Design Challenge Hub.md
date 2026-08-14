@@ -1,13 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/information/interaction-design-challenge-hub/","tags":["gardenEntry"],"created":"2026-08-11T14:40:42.972-07:00","updated":"2026-08-14T11:29:46.780-07:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/information/interaction-design-challenge-hub/","tags":["gardenEntry"],"created":"2026-08-11T14:40:42.972-07:00","updated":"2026-08-14T11:36:27.013-07:00","dg-note-properties":{}}
 ---
 
-# Information
-
-Information regarding the Design Challenge.
-[[ARVR Design Challenge/Information/🚧 Challenge Information\|🚧 Challenge Information]]
-
-# Design
+# Overview
 
 Design breakdown and HTML diagram overviewing the Learner Experience, and a Diagram HTML.
 [[ARVR Design Challenge/Design/Learning Journey/🏫 Learning Journey Breakdown\|🏫 Learning Journey Breakdown]]
