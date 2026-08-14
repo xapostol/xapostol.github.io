@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Challenge Information</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.d92311c2.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>Please find the instructions for the design challenge below. If selected to participate in the 2nd round interview, you will be asked to present for 10 mins so that the team can spend ~20 mins Q&amp;A on your work.<br>
+Please find the instructions for the design challenge below. If selected to participate in the 2nd round interview, you will be asked to present for 10 mins so that the team can spend ~20 mins Q&amp;A on your work.</p>
+<p>Interview Structure:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Topic</td>
+<td>Speaker</td>
+<td>Duration</td>
+</tr>
+<tr>
+<td>Introductions</td>
+<td>All</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Present Design Challenge</td>
+<td>You</td>
+<td>10 mins</td>
+</tr>
+<tr>
+<td>Design Challenge Q&amp;A</td>
+<td>All</td>
+<td>20 mins</td>
+</tr>
+<tr>
+<td>Additional Interview Questions</td>
+<td>All</td>
+<td>10 min</td>
+</tr>
+</tbody>
+</table></div>
+<p>Please send me a copy of your work by <strong>Thursday August 13th</strong>. If you have any questions, don’t hesitate to reach out!</p>
+<hr>
+<p><strong>VR Interaction Design Challenge (UX)</strong></p>
+<p>Disclaimer: This is a solved problem; we are not seeking free consulting or unpaid work. The scenario described in this challenge is representative but not reflective of any current Applied Materials training.</p>
+<p>The point of this exercise is threefold: first, to give you a taste of the kind of work you will be expected to do in this role; second, to give you an opportunity to show a sample of your work product on an example relevant to the job; third, to demonstrate your ability to communicate your design to our team. You will present your work in the second-round interview.</p>
+<p>Your goal is to produce a design for a VR training simulation that teaches the user how to use a torque wrench to properly secure the lug nuts on a car wheel. The target deployment platform is Meta Quest 3 with controllers. Your design should refer to specific hardware/software capabilities wherever appropriate – the point is to produce and communicate a design that a software development team can implement on the target platform.</p>
+<p>We value immersive learning experiences for their unique translation into real-world skill, and your design should reflect that. Your design should empower the user to “learn by doing” with virtual assets and not just play through a series of animations or videos. The simulation should be realistic, and the interactions should be intuitive. You do not need to design the full training curriculum, assessment system, or backend analytics—focus on the core interaction and user experience around torque application.</p>
+<p>Refer to this video for torque wrench interactions: <a href="https://urldefense.com/v3/__https:/www.youtube.com/watch?v=nnpjJOQEy9o__;!!NH8t9uXaRvxizNEf!R2SCfMPaoOCyR6tA46n4pD7EROfoC0ds4cLFiLsYJfw5cfk7HXJRwfqQ9nPEYc-TuyelvpTAxZeKYuE$" target="_blank" class="external-link">https://www.youtube.com/watch?v=nnpjJOQEy9o</a></p>
+<p><strong>Your deliverables:</strong></p>
+<ol>
+<li>Design document(s) for torque wrench interactions with the user and with other objects in the VR experience. Be sure to spec the following behaviors, including inputs and outputs:
+<ol>
+<li>User setting the torque value on the wrench</li>
+<li>Tightening before torque value is achieved</li>
+<li>Behavior when torque value is achieved</li>
+<li>Behavior when torque value is exceeded</li>
+</ol>
+</li>
+<li>Design document(s) for user experience – wireframes, flow diagrams, step-by-step, environment layout, user locomotion, cues, triggers, etc. – whatever you can use best to communicate the design.
+<ol>
+<li>Assume that the lug nuts are already in position and have been hand-tightened but need to be torqued</li>
+<li>While this is intended to be a training scenario, don’t worry about getting instructional text perfect – we’re more interested in how you approach the interaction design to facilitate an active immersive learning experience.</li>
+<li>Similarly, if you create a 3d scene to mockup / prototype, don’t stress about the quality of the 3d graphics. Simple representations are adequate – we’re not judging you on your ability to produce photorealistic 3d assets.</li>
+<li>A brief explanation of how you would plan to validate your design as it is implemented, to test for realism and usability</li>
+</ol>
+</li>
+</ol>
+<p>We’ll evaluate your work primarily on:</p>
+<ol>
+<li>Clarity and plausibility of interaction design</li>
+<li>Appropriate use of VR affordances and constraints</li>
+<li>How well the design supports active hands-on learning</li>
+<li>Your ability to clearly explain and defend design decisions</li>
+</ol>
+<p>Expected work effort: 2-3 hours. You are welcome to use whatever tools you are most comfortable with, but please publish in file formats that are easy to share (PDF, video, etc). Using AI tools is OK too but be prepared to answer questions about what AI tools you have used and how.</p>
+<p>We look forward to reviewing your design and meeting again in the next round of interviews!</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

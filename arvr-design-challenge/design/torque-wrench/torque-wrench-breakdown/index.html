@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Torque Wrench Breakdown</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.d92311c2.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="overview" tabindex="-1">Overview</h1>
+<p>This document outlines how the <strong>Torque Wrench</strong> should function through-out the training experience, specifically in relation to the learner and the interactive components (i.e. - lug-nuts). Any gaps or suggested improvements should be added to the <a class="internal-link" target="" data-note-icon="undefined" href="/arvr-design-challenge/design/torque-wrench/torque-wrench-breakdown/#twd-future-improvements"> Future Improvements Section</a>!</p>
+<div class="callout" data-callout="assumptions"><div class="callout-title"><div class="callout-title-inner">Assumptions</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>For the purposes of this V1 interaction, the <strong>Twist Torque Wrench</strong> will be the only wrench type used.</li>
+<li>Members will be able to navigate around the experience in the standardized way ~ rotating with one hand (usually primary hand), and locomotion (teleportation or smooth locomotion) with the other (usually secondary hand).</li>
+</ul>
+<p></p></div></div>
+<h1 id="experience" tabindex="-1">Experience</h1>
+<p>This section goes over the input/output methods a learner will use to familiarize themselves with the torque wrench ~ including visual mapping of controls, specification of interactions, and expected behaviors.</p>
+<h2 id="controller-mapping" tabindex="-1">Controller Mapping</h2>
+<p><picture src="/img/user/ARVR%20Design%20Challenge/__Resources/Media/Quest3_Controllers.png" alt="Quest3_Controllers.png594" width="594px"><source media="(max-width:480px)" srcset="/img/optimized/BX_ltjM6Ra-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/BX_ltjM6Ra-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/BX_ltjM6Ra-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/BX_ltjM6Ra-700.jpeg"><img class="" src="/img/user/ARVR%20Design%20Challenge/__Resources/Media/Quest3_Controllers.png" alt="Quest3_Controllers.png594" width="594px"></picture></p>
+<h3 id="primary-controller" tabindex="-1">Primary Controller</h3>
+<ul>
+<li>#PrimaryController_Button_Grip : Grabbing and holding objects.
+<ul>
+<li>Utilizing the grip fingers (index to ring) mimics and reinforces the patterns we use outside of the headset.</li>
+</ul>
+</li>
+<li>#PrimaryController_Thumbstick_Click : Releasing objects.
+<ul>
+<li>This button only has one function, as we want to encourage holding onto the torque wrench as long as possible, and in a way that is most realistic to everyday interaction. This button was intentionally set inconveniently.</li>
+</ul>
+</li>
+</ul>
+<h3 id="secondary-controller" tabindex="-1">Secondary Controller</h3>
+<ul>
+<li>#SecondaryController_Button_Grip : Activates additional states of already held objects.
+<ul>
+<li>Chosen to maintain learner expectations from #PrimaryController_Button_Grip. Allows us to mimic grabbing the torque wrench with two hands and twisting in ways we might naturally do.</li>
+</ul>
+</li>
+<li>#SecondaryController_Thumbstick_Left &amp; #SecondaryController_Thumbstick_Right : Changes values.
+<ul>
+<li>Similar to how a learner may scroll on their phone or mouse, the thumbstick mimics selection in a more accessible way. Added this as an additional way to interact with torque value selection and give learners more finite control.</li>
+</ul>
+</li>
+</ul>
+<h2 id="specifications" tabindex="-1">Specifications</h2>
+<h3 id="00-preface-torque-wrench-states" tabindex="-1">00. Preface - Torque Wrench States</h3>
+<p>Here's an overview of the various torque wrench states. I've also listed the anticipated constraints and how we may educate the learners on navigating them.</p>
+<p><code>public enum WrenchState { Idle, AdjustingTorque, LockedOnLug, Cranking };</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Enum</th>
+<th>State</th>
+<th>Constraints/Exit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Idle</code></td>
+<td>Default state, or after dropping the wrench.</td>
+<td>No input for torque adjustment or cranking active.</td>
+</tr>
+<tr>
+<td><code>AdjustingTorque</code></td>
+<td>Holding #SecondaryController_Button_Grip at wrench head and swiping #SecondaryController_Thumbstick_Left or #SecondaryController_Thumbstick_Right.</td>
+<td>Prevents locking onto lug nut or cranking.</td>
+</tr>
+<tr>
+<td><code>LockedOnLug</code></td>
+<td>Pressing #PrimaryController_Thumbstick_Click while wrench head is within range of a lug nut.</td>
+<td>Prevents torque adjustment and cranking is allowed/applied directly to the lug nut.</td>
+</tr>
+<tr>
+<td><code>Cranking</code></td>
+<td>Holding #PrimaryController_Button_Grip and rotating controller. <br>- In <code>AdjustingTorque</code> ~ changes torque setpoint<br>- In <code>ReadyToUse</code> or <code>LockedOnLug</code> ~ tightens or loosens lug nut</td>
+<td>Torque limit reached --&gt; Success/Fail &amp; Wrench manually released while held, if not in <code>LockedOnLug</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="01-interactions-handling" tabindex="-1">01. Interactions - Handling</h3>
+<p>These are the basic interactions a learner will need to handle and manipulate the torque wrench.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <strong>Equipping the Wrench</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>1x Press #PrimaryController_Button_Grip
+<ul>
+<li>If the learner does not have the wrench equipped in any given hand, and the wrench is within trigger range of a hand, pressing the #PrimaryController_Button_Grip once equips the wrench to that hand.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Highlight wrench handle when hand is within ra<span style="color:#ffc000"></span>nge</li>
+<li>#Haptics_Light when wrench reaches hand</li>
+<li>#AudioSFX of blunt force when wrench reaches hand</li>
+</ul>
+</li>
+<li><span style="color:#00b0f0">Logic Example</span>
+<ul>
+<li>
+<p><code>bool _canGrabWrench = Controller.InRange(Wrench) &amp;&amp; !TorqueWrench.Equipped;</code></p>
+<p><code>if (_canGrabWrench &amp;&amp; Controller.Grip(type = ActivationType.SinglePress)) { Controller.EquipWrench(); }</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> <strong>Dropping the Wrench</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>3 Second Hold #PrimaryController_Thumbstick_Click
+<ul>
+<li>If the learner has the wrench equipped, and the wrench head is not within trigger range of a lug nut, pressing and holding the #PrimaryController_Thumbstick_Click for 3 seconds drops the wrench.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Haptics_Light --&gt; #Haptics_Medium as the hold counts from 0 to hold limit, no haptics after limit</li>
+<li>#AudioSFX of wind when wrench is released from hand</li>
+<li>#AudioSFX of metal when wrench hits the ground</li>
+</ul>
+</li>
+<li><span style="color:#00b0f0">Logic Example</span>
+<ul>
+<li>
+<p><code>bool _canDropWrench = Controller.IsHolding(Wrench) &amp;&amp; !TorqueWrench.InRange(LugNut);</code></p>
+<p><code>if (_canDropWrench &amp;&amp; Controller.Trigger(type = ActivationType.Hold, time = 3f)) { Controller.DropWrench(); }</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="02-interactions-adjusting-values" tabindex="-1">02. Interactions - Adjusting Values</h3>
+<p>These interactions are mainly focused on adjusting the torque value itself and require additional, realistic manipulation of the torque wrench object.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> <strong>Setting Torque Value</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>Hold #SecondaryController_Button_Grip
+<ul>
+<li>While the learner has the wrench equipped, and the other hand is within range of the wrench head, holding the #SecondaryController_Button_Grip grabs the head.</li>
+<li>This sets the <code>TorqueWrench.Mode == AdjustingTorque</code>, allowing the learner to adjust the torque value.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ee204d">Deactivate</span>
+<ul>
+<li>Release #SecondaryController_Button_Grip
+<ul>
+<li>While <code>TorqueWrench.Mode == AdjustingTorque</code>, releasing the #SecondaryController_Button_Grip resets <code>TorqueWrench.Mode == Idle</code>, locking in whatever value was last set.<span style="color:#00b050"></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>:
+<ul>
+<li>#Highlight wrench head when other hand is within range</li>
+<li>#Haptics_Medium when setting <code>TorqueWrench.Mode == AdjustingTorque</code></li>
+<li>#AudioSFX of blunt force when wrench is grabbed with other hand</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> <strong>Changing the Torque Value</strong></label>
+<ul>
+<li><span style="color:#64facc">Pre-Reqs</span>
+<ul>
+<li><code>TorqueWrench.Mode == AdjustingTorque</code> for the following to work.</li>
+</ul>
+</li>
+<li><span style="color:#8ab17d">Activate</span>
+<ol>
+<li>Hold #PrimaryController_Button_Grip and Rotate Controller
+<ul>
+<li>The learner may hold #PrimaryController_Button_Grip and rotate their hand to change the value of the torque relative to the direction of rotation (left to decrease and right to increase).</li>
+<li>Like a wrench, they may release the #PrimaryController_Button_Grip to reset their wrist position, and then hold and rotate as many times as they'd like to change the value.</li>
+</ul>
+</li>
+<li>Swipe #SecondaryController_Thumbstick_Left or #SecondaryController_Thumbstick_Right
+<ul>
+<li>The learner can also change the torque value by swiping the #SecondaryController_Thumbstick_Left (decrease) or swiping the #SecondaryController_Thumbstick_Right (increase).</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Haptics_Light as the torque value changes</li>
+<li>#AudioSFX of clicking as the torque value changes</li>
+<li>#Visual_Dynamic of wrench handle rotating by increments</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="03-interactions-components" tabindex="-1">03. Interactions - Components</h3>
+<p>The last set of interactions are focused on the torque wrench and fitting on the lug nut component.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_4" disabled="true"><label for="cbx_4"> <strong>Setting Wrench Head on Lug Nut</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>1x Press #PrimaryController_Thumbstick_Click
+<ul>
+<li>If the learner is holding the wrench, and the wrench head is within trigger range of a given lug nut, pressing #PrimaryController_Thumbstick_Click once locks the torque head to the lug nut.</li>
+<li>This sets the <code>TorqueWrench.Mode == LockedOnLug</code>, allowing the learner to move their controller freely, the head always locked on the nut.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ee204d">Deactivate</span>
+<ul>
+<li>1x Press #PrimaryController_Thumbstick_Click
+<ul>
+<li>While <code>TorqueWrench.Mode == LockedOnLug</code>, pressing the #PrimaryController_Thumbstick_Click resets <code>TorqueWrench.Mode == Idle</code>, releasing the torque head from the locked lug nut.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Highlight lug nut when wrench head is within range</li>
+<li>#Haptics_Medium when the wrench mode changes</li>
+<li>#AudioSFX of metal settling when wrench is set in place</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_5" disabled="true"><label for="cbx_5"> <strong>Rotating Lug Nut</strong></label>
+<ul>
+<li><span style="color:#64facc">Pre-Reqs</span>
+<ul>
+<li><code>TorqueWrench.Mode == Idle</code> for the following to work.</li>
+</ul>
+</li>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>Hold #PrimaryController_Button_Grip and Rotate Controller
+<ul>
+<li>The learner can hold #PrimaryController_Button_Grip and rotate their hand to tighten or loosen the nut, relative to the direction of rotation (left to loosen, right to tighten).</li>
+<li>Like a wrench, they may release the #PrimaryController_Button_Grip to reset their wrist position, and then hold and rotate as many times as they'd like to tighten or loosen the nut.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Haptics_Light &lt;--&gt; #Haptics_Heavy as the lug nut tightens and loosens</li>
+<li>#Visual_Dynamic of lug nut tightening and loosening, drag being added as the cranking gets tighter</li>
+<li>#AudioSFX of lug nut squeaking as it tightens, and stretching as it gets closer to the desired value</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="behaviors" tabindex="-1">Behaviors</h2>
+<h3 id="learning-metrics" tabindex="-1">Learning Metrics</h3>
+<p>Here are some of the expected states a learner may reach when interacting with the torque wrench. These are great opportunities to affirm and give visual, haptic, auditory feedback on how they're progressing!</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_6" disabled="true"><label for="cbx_6"> <strong>Torque Undershot</strong></label>
+<ul>
+<li><span style="color:#c8fafa">Summary</span>
+<ul>
+<li>Learner has set the <code>TorqueWrench.TorqueValue &lt; LugNut.RequiredValue</code>. As they crank, they eventually reach the max value before the torque wrench clicks.</li>
+<li>The lug not is too loose and eventually falls off. A new lug nut appears in its place.</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Animation of lug nut too loose and falling off, rolling endlessly to a scale of 0</li>
+<li>#AudioSFX of torque wrench squeaking tighter and reaching the 'max click'</li>
+<li>#AudioSFX of lug nut falling onto the ground and rolling endlessly away</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_7" disabled="true"><label for="cbx_7"> <strong>Torque Exceeded</strong></label>
+<ul>
+<li><span style="color:#c8fafa">Summary</span>
+<ul>
+<li>Learner has set the <code>TorqueWrench.TorqueValue &gt; LugNut.RequiredValue</code>. As they crank, they eventually reach the max value before the torque wrench clicks, hearing gnarly metal stripping.</li>
+<li>The lug nut has been stripped and messes with the orientation of the wheel. A new lug nut reappears in its place.</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Animation of lug nut too tight and shifting the orientation of the wheel as it hits max; it pops off the wheel quickly</li>
+<li>#AudioSFX of torque wrench squeaking tighter and reaching the 'max click'</li>
+<li>#AudioSFX of nut squeaking as it tightens, eventually becoming sharp and painful as metal scratches</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_8" disabled="true"><label for="cbx_8"> <strong>Torque Achieved</strong></label>
+<ul>
+<li><span style="color:#c8fafa">Summary</span>
+<ul>
+<li>Learner has set the <code>TorqueWrench.TorqueValue == LugNut.RequiredValue</code>. As they crank, they eventually reach the max value before the torque wrench clicks.</li>
+<li>The lug nut is set on snug. The learner may continue.</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Animation of lug nut fitting in perfectly and 'shinning'</li>
+<li>#AudioSFX of torque wrench squeaking tighter and reaching the 'max click'</li>
+<li>#AudioSFX of UI 'success'</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="future-improvements" tabindex="-1">Future Improvements</h1>
+<h2 id="pre-interview-08-11-2026" tabindex="-1">Pre-Interview (08/11/2026)</h2>
+<h3 id="01-accessibility-options" tabindex="-1">01. Accessibility Options</h3>
+<p>Additional accessibility options to set type of hold and interaction. Following best practices and practicality for engaging with the controller, but what if a learner has a mismatch in capability when inside the headset vs real-life?</p>
+<ul>
+<li>What if they get dizzy in the headset easily?</li>
+<li>What is finger dexterity is strong for the work itself, but not as precise for holding different buttons?</li>
+</ul>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

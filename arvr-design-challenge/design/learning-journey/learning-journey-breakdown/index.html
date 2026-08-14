@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Learning Journey Breakdown</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.d92311c2.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="overview" tabindex="-1">Overview</h1>
+<p>This document outlines the overall training experience centered around <strong>Torque Wrench</strong> education. Any gaps or suggested improvements should be added to the <a class="internal-link" target="" data-note-icon="undefined" href="/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/#led-future-improvements"> Future Improvements Section</a>!</p>
+<div class="callout" data-callout="assumptions"><div class="callout-title"><div class="callout-title-inner">Assumptions</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Learner may move around the outlined area using their controllers (i.e. - navigate and rotate) and their body in physical space, but must stay within the designated interaction space.
+<ul>
+<li>Standard movement controls: <strong>teleport</strong> vs <strong>smooth locomotion</strong> &amp; <strong>smooth</strong> vs <strong>incremented turns</strong>.</li>
+</ul>
+</li>
+<li>The learner has standard movement controls and can access information about the tutorial progress through #PrimaryController_Button_YB.</li>
+</ul>
+<p></p></div></div>
+<h1 id="experience" tabindex="-1">Experience</h1>
+<p>This section goes over the larger training flow and the specific checkpoints learners will reach to master the <strong>Torque Wrench</strong>!</p>
+<h2 id="scene-mapping" tabindex="-1">Scene Mapping</h2>
+<h3 id="setting" tabindex="-1">Setting</h3>
+<p><picture src="/img/user/ARVR%20Design%20Challenge/__Resources/Media/AutoShop2037_MikaelJavaid-Camua.jpg" alt="AutoShop2037_MikaelJavaid-Camua.jpg700" width="700px"><source media="(max-width:480px)" srcset="/img/optimized/Wt3qOCyWel-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/Wt3qOCyWel-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/Wt3qOCyWel-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/Wt3qOCyWel-700.jpeg"><img class="" src="/img/user/ARVR%20Design%20Challenge/__Resources/Media/AutoShop2037_MikaelJavaid-Camua.jpg" alt="AutoShop2037_MikaelJavaid-Camua.jpg700" width="700px"></picture><picture src="/img/user/ARVR%20Design%20Challenge/__Resources/Media/GarageSet_PhilippeCaseiro.jpg" alt="GarageSet_PhilippeCaseiro.jpg324" width="324px"><source media="(max-width:480px)" srcset="/img/optimized/Dt1suoDbJS-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/Dt1suoDbJS-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/Dt1suoDbJS-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/Dt1suoDbJS-700.jpeg"><img class="" src="/img/user/ARVR%20Design%20Challenge/__Resources/Media/GarageSet_PhilippeCaseiro.jpg" alt="GarageSet_PhilippeCaseiro.jpg324" width="324px"></picture><picture src="/img/user/ARVR%20Design%20Challenge/__Resources/Media/Garage_kukichart.jpg" alt="Garage_kukichart.jpg373" width="373px"><source media="(max-width:480px)" srcset="/img/optimized/blMnIXdsAs-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/blMnIXdsAs-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/blMnIXdsAs-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/blMnIXdsAs-700.jpeg"><img class="" src="/img/user/ARVR%20Design%20Challenge/__Resources/Media/Garage_kukichart.jpg" alt="Garage_kukichart.jpg373" width="373px"></picture></p>
+<p><strong>Auto Workshop</strong><br>
+Multiple cars raised up in the background. Layout is busy, but follows best practices for a safe work environment.</p>
+<h3 id="interaction-zone" tabindex="-1">Interaction Zone</h3>
+<ul>
+<li>Simple (10 x 10) zone with a lifted car, wheel chest height to learner, and torque wrench placed on a mobile work-stand.</li>
+<li>Notepad is placed on the mobile work-stand. Message from their boss asking the learner to finish the last wheel, as they had to step out for an emergency.
+<ul>
+<li>Includes number of steps till training completion, diagram of the car, its wheels, and specific torque specifications for each bolt). Also indicates the mode the learner is in (i.e. - <code>Learning, Practice, or Endless</code>).</li>
+<li>UI pop-up version is also accessible from #PrimaryController_Button_YB.</li>
+<li>Learner presses #Controller_Button_Trigger to interact with the UI.</li>
+</ul>
+</li>
+<li>Pace should be guided, but never forced.</li>
+</ul>
+<h3 id="atmosphere" tabindex="-1">Atmosphere</h3>
+<ul>
+<li>#Particle dust floating through the air, very minimal, but enough to give an atmosphere</li>
+<li>#AudioSFX of air vents and machine hums; only diegetic, soft sfx to maintain learner focus</li>
+</ul>
+<h2 id="specifications" tabindex="-1">Specifications</h2>
+<h3 id="00-preface-experience-state" tabindex="-1">00. Preface - Experience State</h3>
+<p>Here are the training experience states that define learner progression. These map to scene transitions and activity triggers that are explicitly indicated through visual, haptic, and audio cues.</p>
+<p><code>public enum ExperienceState { Intro, GuidedExploration, Practice, Complete, Endless };</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Enum</th>
+<th>State</th>
+<th>Constraints/Exit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Intro</code></td>
+<td>Learner begins in the workshop. Note pad and wrench visible.</td>
+<td>Learner interacts with note pad or presses #PrimaryController_Button_YB to begin.</td>
+</tr>
+<tr>
+<td><code>GuidedExploration</code></td>
+<td>Active learning phase: 3-lug-nut sequence (under, over, correct). Guided step-by-step via hints.</td>
+<td>All 3 lug-nuts completed successfully → transitions to <code>Practice</code>.</td>
+</tr>
+<tr>
+<td><code>Practice</code></td>
+<td>Learner applies skills to 4 lug-nuts on the same wheel, then a 4-wheel sequence.</td>
+<td>All 4 wheels tightened to correct spec → transitions to <code>Complete</code>.</td>
+</tr>
+<tr>
+<td><code>Complete</code></td>
+<td>Learner finishes the 4-wheel sequence.</td>
+<td>Learner may continue to <code>Endless</code> or exit.</td>
+</tr>
+<tr>
+<td><code>Endless</code></td>
+<td>Open-ended practice mode: varying lug-nut counts and torque specs.</td>
+<td>No exit condition — persists until learner manually exits or resets.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="01-activity-understanding" tabindex="-1">01. Activity - Understanding</h3>
+<p>This first section of the training experience will focus on familiarizing the learner with the scene and tool context. This section also indicates how to check tutorial progress via the notepad on the desk or by pressing #PrimaryController_Button_YB for a UI pop-up.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <strong>Checking Progress</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>1x Press #PrimaryController_Button_YB
+<ul>
+<li>While in any state of the experience, the learner may open a UI wrist menu version of the 'notepad' on their primary controller wrist.</li>
+<li>This is also available in physical space via the 'notepad'</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ee204d">Deactivate</span>
+<ul>
+<li>1x Press #PrimaryController_Button_YB
+<ul>
+<li>Pressing the same button closes the UI.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Dynamic semi-transparent UI wrist menu</li>
+<li>#Haptics_Light on the designated controller</li>
+<li>#AudioSFX of subtle <strong>UI toggle</strong> sound</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> <strong>Initiating the Experience</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>Picking up the <strong>Torque Wrench</strong>
+<ul>
+<li>If in <code>Intro</code> state and learner picks up the torque wrench, the training experience starts triggering <code>GuidedExploration</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Animation of notepad text fades out → next step fades in on the notepad</li>
+<li>#AudioSFX of soft chime</li>
+<li>#Haptics_Light on controller upon selection</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="02-activity-exploration" tabindex="-1">02. Activity - Exploration</h3>
+<p>The second section will guide the learner through interacting with the torque wrench, teaching them how to handle and set torque values. This section actively guides the learner through tightening lug-nuts, each step hinting at the next with highlights, haptics, and audio cues.</p>
+<p>The learner will set 3 different lug-nuts, following the star pattern. It will also actively show what happens when the torque value is <strong>under</strong> (1st), <strong>over</strong> (2nd), and <strong>right on</strong> (3rd) the correct torque value.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> <strong>Understanding the Wrench</strong></label>
+<ul>
+<li><span style="color:#64facc">Pre-Reqs</span>
+<ul>
+<li><code>ExperienceState == GuidedExploration</code>.</li>
+</ul>
+</li>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>As learner nears an interaction (i.e. - wrench or lug nut), context hints appear.</li>
+</ul>
+</li>
+<li><span style="color:#ee204d">Deactivate</span>
+<ul>
+<li>Prompt fades when learner completes the action.</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Animation floating UI indicators (i.e. - grip hand, thumbstick) and informational text fade in as learner approaches interaction points</li>
+<li>#AudioSFX of <strong>gentle chime</strong> for new hint; <strong>soft chime-up</strong> for success</li>
+<li>#Haptics_Light when hint appears, stronger on success</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> <strong>Torque Guidance</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>When <code>TorqueWrench.TorqueValue</code> ≠ <code>LugNut.RequiredValue</code> and cranking completes, expected behaviors initiate. View 'Behaviors' Section of <a class="internal-link is-unresolved" href="/404" target="">AR+VR Design Challenge/01. Design/Torque Wrench/Breakdown</a> for more information.
+<ol>
+<li><strong>Undershoot</strong> --&gt; lug nut spins off, rolls away</li>
+<li><strong>Overshoot</strong> --&gt; lug nut strips, wheel shifts orientation</li>
+<li><strong>Achieved</strong> --&gt; lug nut settles</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Animation floating UI indicators (i.e. - grip hand, thumbstick) and informational text appear over interaction points</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_4" disabled="true"><label for="cbx_4"> <strong>Transition to Practice</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>After successfully tightening the last lug-nut in <code>GuidedExploration</code></li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Animation: notepad updates → “Now try all 4 lug-nuts on the wheel.”</li>
+<li>#Visual_Dynamic UI shifts to 'Practice Mode'</li>
+<li>#AudioSFX Confirmed <strong>success chime</strong></li>
+<li>#Haptics_Light and controller pulse</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="03-activity-practice" tabindex="-1">03. Activity - Practice</h3>
+<p>The last section allows the learner to practice what they've learned by changing and manipulating the lug-nuts on a single wheel, and then a 4-wheel sequence. Each set of lug-nuts has a different value that must be tightened correctly.</p>
+<p>After the learner has done all 4 wheels, they reach the <code>Complete</code>state where they're affirmed of their progress (i.e. - visualized on the notepad). This activates an <code>Endless</code> where they can continue to practice what they've learned.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_5" disabled="true"><label for="cbx_5"> <strong>Completing 4-Wheel Sequence</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>When all 4 wheels are tightened to correct torque</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Animation car lowers slightly → “All wheels secured!”</li>
+<li>#AudioSFX full success suite (UI chime + distant <strong>clank</strong> of car settling)</li>
+<li>#Haptics_Medium → #Haptics_Heavy pulse</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_6" disabled="true"><label for="cbx_6"> <strong>Continuing or Resetting the Experience</strong></label>
+<ul>
+<li><span style="color:#8ab17d">Activate</span>
+<ul>
+<li>1x Press “Continue Practicing” on Notepad (Physical or UI Version)</li>
+</ul>
+</li>
+<li><span style="color:#ee204d">Deactivate</span>
+<ul>
+<li>1x Press “Exit Practice” on Notepad (Physical or UI Version)</li>
+</ul>
+</li>
+<li><span style="color:#ffd98c">Effects</span>
+<ul>
+<li>#Visual_Dynamic UI shifts to 'Endless Mode'</li>
+<li>#AudioSFX <strong>car revving</strong> sfx</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="validation" tabindex="-1">Validation</h2>
+<h3 id="process" tabindex="-1">Process</h3>
+<p>In order to validate the effectiveness of the activity, there are a few checks and groups I would consider running the experience with. The main testing philosophy is to 'fail-fast', so testing frequently and often with different groups gets us closer to the end goal faster!</p>
+<h4 id="1-playtesting" tabindex="-1">1. Playtesting</h4>
+<ul>
+<li><strong>Cycle 1 - Internal</strong>
+<ul>
+<li>Ensure state transitions, tool interactions, and feedback timing with development team (design, engineering, audio).</li>
+<li>Check for any immediate gaps.</li>
+</ul>
+</li>
+<li><strong>Cycle 2 - New Learners</strong>
+<ul>
+<li>Observe non-technical learners (no VR or torque wrench experience)</li>
+<li>In this section, I'd measure for completion rate, time-to-first-correct-torque, and recovery from errors / blockers.</li>
+</ul>
+</li>
+<li><strong>Cycle 3 - Experts</strong>
+<ul>
+<li>Test with technicians to check accuracy of interactions, procedures (e.g., star pattern), and skill transfer (perceived).</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-performance" tabindex="-1">2. Performance</h4>
+<ul>
+<li><strong>Objective</strong>
+<ul>
+<li>Step completion rate, average torque error margin, # of retries per wheel, time per step.</li>
+</ul>
+</li>
+<li><strong>Subjective</strong>
+<ul>
+<li>Post-session surveys (presence/confidence scales).</li>
+</ul>
+</li>
+<li><strong>Misses</strong>
+<ul>
+<li>Flag any interaction where &gt;20% of learners missed the intended workflow (i.e. - skipping hints, mis-timing wrench release, clunking grabbing).</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-accessibility" tabindex="-1">3. Accessibility</h4>
+<ul>
+<li><strong>Motor</strong>
+<ul>
+<li>Button hold timings, alternative inputs (e.g., thumbstick vs. grip), additional ways to complete a task.</li>
+</ul>
+</li>
+<li><strong>Cognitive</strong>
+<ul>
+<li>UI readability, cognitive workload during multi-step tasks, timing with hints.</li>
+</ul>
+</li>
+<li><strong>Physical</strong>
+<ul>
+<li>Comfort in the headset, locomotion comfort (teleport vs. smooth), ease of use for notepad (UI wrist menu).</li>
+</ul>
+</li>
+</ul>
+<h1 id="future-improvements" tabindex="-1">Future Improvements</h1>
+<h2 id="pre-interview-08-11-2026" tabindex="-1">Pre-Interview (08/11/2026)</h2>
+<h3 id="01-existing-specifications" tabindex="-1">01. Existing Specifications</h3>
+<p>Include real specifications and interaction procedures provided by AMAT and other industry best practices (i.e. - have flow of interactions follow specified safety procedures from handbooks, guides, etc.).</p>
+<h3 id="02-multiple-activities" tabindex="-1">02. Multiple Activities</h3>
+<p>Have a true 'endless' mode where the learner can change out different car tires for multiple vehicles. This expanded activity would also educate on attaching different torque wrench heads to set the correct lug-nut size.</p>
+<h3 id="03-modular-design-system" tabindex="-1">03. Modular Design System</h3>
+<p>Utilize Tags to create a Modular Design System via an HTML Webpage or a scene directly integrated into the Unity System</p>
+<ul>
+<li>Can take advantage of Unity game-objects, scripts, and existing interaction systems</li>
+</ul>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
