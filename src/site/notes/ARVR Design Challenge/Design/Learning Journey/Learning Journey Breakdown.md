@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","dg-note-properties":{"icon":"🏫"}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","updated":"2026-08-13T17:30:57.343-07:00","dg-note-properties":{"icon":"🏫"}}
 ---
 
 # Overview{ #mled-overview}

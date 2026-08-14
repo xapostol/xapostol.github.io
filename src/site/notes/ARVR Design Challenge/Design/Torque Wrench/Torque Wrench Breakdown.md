@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/design/torque-wrench/torque-wrench-breakdown/","dg-note-properties":{"icon":"🔧"}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/design/torque-wrench/torque-wrench-breakdown/","created":"2026-08-11T20:23:26.766-07:00","updated":"2026-08-13T17:30:52.062-07:00","dg-note-properties":{"icon":"🔧"}}
 ---
 
 # Overview{ #twd-overview}

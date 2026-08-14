@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/information/challenge-information/","dg-note-properties":{"icon":"🚧"}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/information/challenge-information/","created":"2026-08-10T23:33:34.488-07:00","updated":"2026-08-13T17:30:45.348-07:00","dg-note-properties":{"icon":"🚧"}}
 ---
 
 Please find the instructions for the design challenge below. If selected to participate in the 2nd round interview, you will be asked to present for 10 mins so that the team can spend ~20 mins Q&A on your work.
