@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Challenge Information</title>
+<title>Torque Wrench Diagrams</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script type="importmap">
@@ -21,7 +21,7 @@
 <script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("data-lucide",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
 <script defer="defer" src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
 <script defer="defer" src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async/>
 <script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
 <link href="/styles/obsidian-base.css" rel="stylesheet">
 <link href="/styles/_theme.2159c857.css" rel="stylesheet">
@@ -112,7 +112,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink">
+<div @click.stop class="notelink active-note">
 <a data-note-icon="" style="text-decoration:none" class="filename" href="/arvr-design-challenge/design/torque-wrench/torque-wrench-diagrams.canvas/">Torque Wrench Diagrams </a>
 </div>
 </div>
@@ -128,7 +128,7 @@
 <span class="foldername">Information</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note">
+<div @click.stop class="notelink">
 <a data-note-icon="" style="text-decoration:none" class="filename" href="/arvr-design-challenge/information/challenge-information/">Challenge Information </a>
 </div>
 </div>
@@ -177,89 +177,42 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-08-14T01:12:03.249Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
-<main class="content cm-s-obsidian print">
+<main class="content cm-s-obsidian print canvas-page">
 <header>
-<h1 data-note-icon="">Challenge Information</h1>
+<h1 data-note-icon="">Torque Wrench Diagrams</h1>
 <div class="header-meta">
 <div class="header-tags">
 </div>
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-08-10T23:33:34.488-07:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-08-13T17:30:45.348-07:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-08-13T18:02:02.541-07:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-08-13T18:09:28.067-07:00"></span></div></div></div>
 </header>
-<p>Please find the instructions for the design challenge below. If selected to participate in the 2nd round interview, you will be asked to present for 10 mins so that the team can spend ~20 mins Q&amp;A on your work.<br>
-Please find the instructions for the design challenge below. If selected to participate in the 2nd round interview, you will be asked to present for 10 mins so that the team can spend ~20 mins Q&amp;A on your work.</p>
-<p>Interview Structure:</p>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Topic</td>
-<td>Speaker</td>
-<td>Duration</td>
-</tr>
-<tr>
-<td>Introductions</td>
-<td>All</td>
-<td>5 min</td>
-</tr>
-<tr>
-<td>Present Design Challenge</td>
-<td>You</td>
-<td>10 mins</td>
-</tr>
-<tr>
-<td>Design Challenge Q&amp;A</td>
-<td>All</td>
-<td>20 mins</td>
-</tr>
-<tr>
-<td>Additional Interview Questions</td>
-<td>All</td>
-<td>10 min</td>
-</tr>
-</tbody>
-</table></div>
-<p>Please send me a copy of your work by <strong>Thursday August 13th</strong>. If you have any questions, don’t hesitate to reach out!</p>
-<hr>
-<p><strong>VR Interaction Design Challenge (UX)</strong></p>
-<p>Disclaimer: This is a solved problem; we are not seeking free consulting or unpaid work. The scenario described in this challenge is representative but not reflective of any current Applied Materials training.</p>
-<p>The point of this exercise is threefold: first, to give you a taste of the kind of work you will be expected to do in this role; second, to give you an opportunity to show a sample of your work product on an example relevant to the job; third, to demonstrate your ability to communicate your design to our team. You will present your work in the second-round interview.</p>
-<p>Your goal is to produce a design for a VR training simulation that teaches the user how to use a torque wrench to properly secure the lug nuts on a car wheel. The target deployment platform is Meta Quest 3 with controllers. Your design should refer to specific hardware/software capabilities wherever appropriate – the point is to produce and communicate a design that a software development team can implement on the target platform.</p>
-<p>We value immersive learning experiences for their unique translation into real-world skill, and your design should reflect that. Your design should empower the user to “learn by doing” with virtual assets and not just play through a series of animations or videos. The simulation should be realistic, and the interactions should be intuitive. You do not need to design the full training curriculum, assessment system, or backend analytics—focus on the core interaction and user experience around torque application.</p>
-<p>Refer to this video for torque wrench interactions: <a href="https://urldefense.com/v3/__https:/www.youtube.com/watch?v=nnpjJOQEy9o__;!!NH8t9uXaRvxizNEf!R2SCfMPaoOCyR6tA46n4pD7EROfoC0ds4cLFiLsYJfw5cfk7HXJRwfqQ9nPEYc-TuyelvpTAxZeKYuE$" target="_blank" class="external-link">https://www.youtube.com/watch?v=nnpjJOQEy9o</a></p>
-<p><strong>Your deliverables:</strong></p>
-<ol>
-<li>Design document(s) for torque wrench interactions with the user and with other objects in the VR experience. Be sure to spec the following behaviors, including inputs and outputs:
-<ol>
-<li>User setting the torque value on the wrench</li>
-<li>Tightening before torque value is achieved</li>
-<li>Behavior when torque value is achieved</li>
-<li>Behavior when torque value is exceeded</li>
-</ol>
-</li>
-<li>Design document(s) for user experience – wireframes, flow diagrams, step-by-step, environment layout, user locomotion, cues, triggers, etc. – whatever you can use best to communicate the design.
-<ol>
-<li>Assume that the lug nuts are already in position and have been hand-tightened but need to be torqued</li>
-<li>While this is intended to be a training scenario, don’t worry about getting instructional text perfect – we’re more interested in how you approach the interaction design to facilitate an active immersive learning experience.</li>
-<li>Similarly, if you create a 3d scene to mockup / prototype, don’t stress about the quality of the 3d graphics. Simple representations are adequate – we’re not judging you on your ability to produce photorealistic 3d assets.</li>
-<li>A brief explanation of how you would plan to validate your design as it is implemented, to test for realism and usability</li>
-</ol>
-</li>
-</ol>
-<p>We’ll evaluate your work primarily on:</p>
-<ol>
-<li>Clarity and plausibility of interaction design</li>
-<li>Appropriate use of VR affordances and constraints</li>
-<li>How well the design supports active hands-on learning</li>
-<li>Your ability to clearly explain and defend design decisions</li>
-</ol>
-<p>Expected work effort: 2-3 hours. You are welcome to use whatever tools you are most comfortable with, but please publish in file formats that are easy to share (PDF, video, etc). Using AI tools is OK too but be prepared to answer questions about what AI tools you have used and how.</p>
-<p>We look forward to reviewing your design and meeting again in the next round of interviews!</p>
+<div id="Torque_Wrench_Diagramscanvas" class="canvas-wrapper hide">
+<svg class="canvas-background">
+<defs>
+<pattern id="canvas-grid-Torque_Wrench_Diagramscanvas" width="25" height="25" patternUnits="userSpaceOnUse">
+<circle r="1.5" cx="12.5" cy="12.5"></circle>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#canvas-grid-Torque_Wrench_Diagramscanvas)"></rect>
+</svg>
+<div class="canvas">
+<svg class="canvas-edges-container" style="position:absolute;width:1px;height:1px;overflow:visible">
+<defs><filter x="-0.1" y="-0.1" width="1.2" height="1.3" id="edge-label-bg">
+<feFlood flood-color="var(--background-primary)" flood-opacity="1" result="bg"/>
+<feMerge>
+<feMergeNode in="bg"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter></defs>
+</svg>
+<div class="canvas-node canvas-node-file canvas-node-image" data-node-id="30db0f17fb9229d3" style="transform:translate(-640px,-560px);width:1300px;height:869px">
+<div class="canvas-node-container">
+<div class="canvas-node-content image-embed">
+<img src="/img/user/ARVR%20Design%20Challenge/__Resources/Diagrams.png" alt="Diagrams.png" loading="lazy"/>
+</div>
+</div>
+</div>
+</div>
+</div>
 </main>
 <aside>
 <div class="sidebar">
@@ -271,7 +224,7 @@ Please find the instructions for the design challenge below. If selected to part
 <div id="graph-controls">
 <div class="ctrl-left">
 <label id="graph-depth-label" for="graph-depth-slider">Depth <span x-text="graphDepth"></span></label>
-<input type="range" id="graph-depth-slider" min="1" max="3" step="1" x-model.number="graphDepth" x-on:input="window.__graph.setLocalGraphDepth(graphDepth)">
+<input type="range" id="graph-depth-slider" min="1" max="3" step="1" x-model.number="graphDepth" x-on:input="window.__graph.setLocalGraphDepth(graphDepth)"/>
 </div>
 <div class="ctrl-right">
 <span id="global-graph-btn" x-on:click="showFullGraph = true; window.__graph.openFullGraph()"><i data-lucide="globe" aria-hidden="true"></i></span>
@@ -287,7 +240,8 @@ Please find the instructions for the design challenge below. If selected to part
 </div>
 <div class="backlinks">
 <div class="backlink-title">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><i data-lucide="link"></i><a href="/" data-note-icon="" class="backlink">Interaction Design Challenge Hub</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
@@ -306,6 +260,7 @@ Please find the instructions for the design challenge below. If selected to part
 <script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script defer="defer" src="https://unpkg.com/lucide@latest"></script>
 <script defer="defer">document.addEventListener("DOMContentLoaded",(()=>{lucide.createIcons({attrs:{class:["svg-icon"]}})}))</script>
+<script>!function(){const e="Drag to pan",t="Scroll to zoom",n="Double-click to reset",a=/iPad|iPhone|iPod/.test(navigator.userAgent)||"MacIntel"===navigator.platform&&navigator.maxTouchPoints>1,i=/^((?!chrome|android).)*safari/i.test(navigator.userAgent),o=a&&i;function c(a){try{if(!(window.innerWidth<=768)){const M=document.createElement("div");M.className="canvas-hints",M.innerHTML=`\n                    <span><kbd>Drag</kbd> ${e}</span>\n                    <span><kbd>Scroll</kbd> ${t}</span>\n                    <span><kbd>Double-click</kbd> ${n}</span>\n                `,a.appendChild(M);let w=!1;const b=()=>{w||(M.classList.add("hidden"),w=!0)};a.addEventListener("pointerdown",b,{once:!0}),a.addEventListener("wheel",b,{once:!0})}const l=a.querySelector(".canvas");if(!l)return console.warn("Canvas element not found"),void a.classList.remove("hide");const s=a.querySelector(".canvas-background pattern"),d=Array.from(l.querySelectorAll(".canvas-node"));let u=1,m={x:0,y:0};const h=.1,p=5,y=d.map((e=>{const t=e.style.transform.match(/translate\(([\d.-]+)px,\s*([\d.-]+)px\)/);if(!t)return null;return{x:parseFloat(t[1]),y:parseFloat(t[2]),w:parseFloat(e.style.width)||e.offsetWidth,h:parseFloat(e.style.height)||e.offsetHeight}})).filter(Boolean),v=(()=>{if(0===y.length)return{minX:0,minY:0,maxX:100,maxY:100};let e=1/0,t=1/0,n=-1/0,a=-1/0;return y.forEach((({x:i,y:o,w:c,h:r})=>{e=Math.min(e,i),t=Math.min(t,o),n=Math.max(n,i+c),a=Math.max(a,o+r)})),{minX:e,minY:t,maxX:n,maxY:a}})();let x=null,f=!1;function i(){if(f=!1,l.style.transform=`translate(${m.x}px, ${m.y}px) scale(${u})`,l.classList.toggle("small-scale",u<.3),s){const e=25,t=(m.x%e+e)%e,n=(m.y%e+e)%e;s.setAttribute("x",t),s.setAttribute("y",n)}}function o(){f||(f=!0,x=requestAnimationFrame(i))}function c(){const e=v,t=e.maxX-e.minX+100,n=e.maxY-e.minY+100,o=a.clientWidth,c=a.clientHeight,r=o/t,l=c/n;u=.9*Math.min(r,l,1);const s=(e.minX+e.maxX)/2,d=(e.minY+e.maxY)/2;m.x=o/2-s*u,m.y=c/2-d*u,i()}function r(e,t){const n=Math.max(h,Math.min(p,u*e)),a=n/u,i=t.x-m.x,c=t.y-m.y;m.x=t.x-i*a,m.y=t.y-c*a,u=n,o()}let g=!1,Y={x:0,y:0},L={x:0,y:0};a.addEventListener("pointerdown",(e=>{e.target.closest(".canvas-node-content")||(g=!0,Y={x:e.clientX,y:e.clientY},L={x:m.x,y:m.y},a.setPointerCapture(e.pointerId))})),a.addEventListener("pointermove",(e=>{g&&(m.x=L.x+e.clientX-Y.x,m.y=L.y+e.clientY-Y.y,o())})),a.addEventListener("pointerup",(()=>{g=!1})),a.addEventListener("pointercancel",(()=>{g=!1})),a.addEventListener("wheel",(e=>{const t=e.target.closest(".canvas-node-content");if(t){if(t.scrollHeight>t.clientHeight){const n=t.scrollTop<=0&&e.deltaY<0,a=t.scrollTop+t.clientHeight>=t.scrollHeight&&e.deltaY>0;if(!n&&!a)return}}e.preventDefault();const n=a.getBoundingClientRect(),i={x:e.clientX-n.left,y:e.clientY-n.top};r(1-e.deltaY/500,i)}),{passive:!1});let X=0,E={x:0,y:0};a.addEventListener("touchstart",(e=>{if(2===e.touches.length){const t=e.touches[0],n=e.touches[1];X=Math.hypot(n.clientX-t.clientX,n.clientY-t.clientY),E={x:(t.clientX+n.clientX)/2,y:(t.clientY+n.clientY)/2}}}),{passive:!0}),a.addEventListener("touchmove",(e=>{if(2===e.touches.length){e.preventDefault();const t=e.touches[0],n=e.touches[1],i=Math.hypot(n.clientX-t.clientX,n.clientY-t.clientY),c={x:(t.clientX+n.clientX)/2,y:(t.clientY+n.clientY)/2},l=a.getBoundingClientRect(),s={x:c.x-l.left,y:c.y-l.top};if(X>0){r(i/X,s)}m.x+=c.x-E.x,m.y+=c.y-E.y,o(),X=i,E=c}}),{passive:!1}),a.addEventListener("dblclick",(()=>{c()})),c(),a.querySelectorAll(".canvas-file-iframe").forEach((function(e){e.addEventListener("load",(function(){try{var t=e.contentDocument;if(!t)return;var n=t.querySelector(".content");if(!n)return;var a=document.createElement("div");a.className="canvas-file-content markdown-rendered",a.innerHTML=n.innerHTML,e.parentNode.replaceChild(a,e)}catch(e){}}))})),a.classList.remove("hide")}catch(k){console.error("Canvas initialization error:",k),a.classList.remove("hide")}}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",(()=>{setTimeout((()=>{document.querySelectorAll(".canvas-wrapper").forEach(c)}),o?100:0)})):setTimeout((()=>{document.querySelectorAll(".canvas-wrapper").forEach(c)}),o?100:0)}()</script>
 <script>document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll(".obsidian-bases-views").forEach((function(e){var t=e.querySelector(".obsidian-bases-active-view"),a=e.querySelector(".obsidian-bases-dropdown"),i=e.querySelectorAll(".obsidian-bases-dropdown-item"),n=e.querySelectorAll(".obsidian-bases-view-panel"),o=e.querySelector(".obsidian-bases-active-view-name"),r=e.querySelector(".obsidian-bases-count-value");t&&a&&(t.addEventListener("click",(function(e){e.stopPropagation();var i="none"!==a.style.display;a.style.display=i?"none":"block",t.setAttribute("aria-expanded",!i)})),document.addEventListener("click",(function(){a.style.display="none",t.setAttribute("aria-expanded","false")})),i.forEach((function(s){s.addEventListener("click",(function(s){s.stopPropagation();var d=this.getAttribute("data-view-index");i.forEach((function(e){e.classList.remove("active")})),this.classList.add("active"),n.forEach((function(e){e.style.display="none"}));var l=e.querySelector('.obsidian-bases-view-panel[data-view-index="'+d+'"]');l&&(l.style.display="block");var c=this.querySelector(".obsidian-bases-view-icon"),u=t.querySelector(".obsidian-bases-view-icon");if(c&&u&&u.replaceWith(c.cloneNode(!0)),o&&(o.textContent=this.textContent.trim()),r&&l){var b=l.querySelectorAll("tbody tr:not(.obsidian-base-group-row), .obsidian-base-card, .obsidian-base-list li");r.textContent=b.length}a.style.display="none",t.setAttribute("aria-expanded","false")}))})))})),document.querySelectorAll(".bases-dynamic-date").forEach((function(e){var t=e.getAttribute("data-type"),a=new Date;if("today"===t){var i=a.getFullYear(),n=String(a.getMonth()+1).padStart(2,"0"),o=String(a.getDate()).padStart(2,"0");e.textContent=i+"-"+n+"-"+o}else if("now"===t){i=a.getFullYear(),n=String(a.getMonth()+1).padStart(2,"0"),o=String(a.getDate()).padStart(2,"0");var r=String(a.getHours()).padStart(2,"0"),s=String(a.getMinutes()).padStart(2,"0");e.textContent=i+"-"+n+"-"+o+" "+r+":"+s}}))}))</script>
 </body>
 </html>
