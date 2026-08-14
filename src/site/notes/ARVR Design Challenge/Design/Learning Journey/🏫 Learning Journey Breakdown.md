@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","updated":"2026-08-13T18:34:01.608-07:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","updated":"2026-08-14T11:29:12.181-07:00","dg-note-properties":{}}
 ---
 
 # Overview{ #mled-overview}
@@ -171,7 +171,7 @@ In order to validate the effectiveness of the activity, there are a few checks a
 ## Pre-Interview (08/11/2026)
 
 ### 01. Existing Specifications
-Include real specifications and interaction procedures provided by AMAT and other industry best practices (i.e. - have flow of interactions follow specified safety procedures from handbooks, guides, etc.).
+Include real specifications and interaction procedures provided by organization and other industry best practices (i.e. - have flow of interactions follow specified safety procedures from handbooks, guides, etc.).
 
 ### 02. Multiple Activities
 Have a true 'endless' mode where the learner can change out different car tires for multiple vehicles. This expanded activity would also educate on attaching different torque wrench heads to set the correct lug-nut size.
