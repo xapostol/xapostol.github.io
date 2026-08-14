@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","updated":"2026-08-13T18:31:42.688-07:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","updated":"2026-08-13T18:34:01.608-07:00","dg-note-properties":{}}
 ---
 
 # Overview{ #mled-overview}
@@ -97,7 +97,7 @@ The learner will set 3 different lug-nuts, following the star pattern. It will a
 	    - #Haptics_Light when hint appears, stronger on success
 - [ ] **Torque Guidance**
 	- <span style="color:rgb(138, 177, 125)">Activate</span>
-	    - When `TorqueWrench.TorqueValue` ≠ `LugNut.RequiredValue` and cranking completes, expected behaviors initiate. View 'Behaviors' Section of [[AR+VR  Design Challenge/01. Design/Torque Wrench/Breakdown\|AR+VR  Design Challenge/01. Design/Torque Wrench/Breakdown]] for more information.
+	    - When `TorqueWrench.TorqueValue` ≠ `LugNut.RequiredValue` and cranking completes, expected behaviors initiate. View 'Behaviors' Section of [[ARVR Design Challenge/Design/Torque Wrench/🔧 Torque Wrench Breakdown\|🔧 Torque Wrench Breakdown]] for more information.
 	        1. **Undershoot** --> lug nut spins off, rolls away
 	        2. **Overshoot** --> lug nut strips, wheel shifts orientation
 	        3. **Achieved** --> lug nut settles
