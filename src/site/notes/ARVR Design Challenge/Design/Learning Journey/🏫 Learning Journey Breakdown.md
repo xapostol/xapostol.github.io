@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","updated":"2026-08-13T18:28:05.505-07:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","updated":"2026-08-13T18:31:42.688-07:00","dg-note-properties":{}}
 ---
 
 # Overview{ #mled-overview}
 
 
-This document outlines the overall training experience centered around **Torque Wrench** education. Any gaps or suggested improvements should be added to the [[ARVR Design Challenge/Design/Learning Journey/🏫 Learning Journey Breakdown#^led-future-improvements \| Future Improvements Section]]!
+This document outlines the overall training experience centered around **Torque Wrench** education. Any gaps or suggested improvements should be added to the [[ARVR Design Challenge/Design/Learning Journey/🏫 Learning Journey Breakdown#^mled-future-improvements \| Future Improvements Section]]!
 
 > [!Assumptions]
 > - Learner may move around the outlined area using their controllers (i.e. - navigate and rotate) and their body in physical space, but must stay within the designated interaction space.
