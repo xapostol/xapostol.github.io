@@ -1,0 +1,60 @@
+---
+{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-diagrams.canvas/","contentClasses":"canvas-page","created":"2026-08-13T18:01:04.762-07:00","updated":"2026-08-13T18:09:33.841-07:00","dg-note-properties":{}}
+---
+
+<div id="Learning_Journey_Diagramscanvas" class="canvas-wrapper hide">
+	<svg class="canvas-background">
+		<defs>
+			<pattern id="canvas-grid-Learning_Journey_Diagramscanvas" width="25" height="25" patternUnits="userSpaceOnUse">
+				<circle r="1.5" cx="12.5" cy="12.5"></circle>
+			</pattern>
+		</defs>
+		<rect width="100%" height="100%" fill="url(#canvas-grid-Learning_Journey_Diagramscanvas)"></rect>
+	</svg>
+	<div class="canvas">
+		<svg class="canvas-edges-container" style="position:absolute;width:1px;height:1px;overflow:visible;">
+			<defs><filter x="-0.1" y="-0.1" width="1.2" height="1.3" id="edge-label-bg">
+			<feFlood flood-color="var(--background-primary)" flood-opacity="1" result="bg"/>
+			<feMerge>
+				<feMergeNode in="bg"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter></defs>
+		</svg>
+		<div class="canvas-node canvas-node-file canvas-node-image " data-node-id="1f0c8ccadaba4e8b" style="transform: translate(-12170px, 1302px); width: 4258px; height: 2203px; ">
+	<div class="canvas-node-container">
+		<div class="canvas-node-content image-embed">
+			<img src="/img/user/ARVR%20Design%20Challenge/__Resources/Diagram_Learner_01A.png" alt="Diagram_Learner_01A.png" loading="lazy" />
+		</div>
+	</div>
+</div>
+<div class="canvas-node canvas-node-file canvas-node-image " data-node-id="909ee3a354069dd3" style="transform: translate(-7912px, 1302px); width: 4258px; height: 2203px; ">
+	<div class="canvas-node-container">
+		<div class="canvas-node-content image-embed">
+			<img src="/img/user/ARVR%20Design%20Challenge/__Resources/Diagram_Learner_01B.png" alt="Diagram_Learner_01B.png" loading="lazy" />
+		</div>
+	</div>
+</div>
+<div class="canvas-node canvas-node-file canvas-node-image " data-node-id="cc120dca31b224fd" style="transform: translate(-3658px, 1302px); width: 4258px; height: 2203px; ">
+	<div class="canvas-node-container">
+		<div class="canvas-node-content image-embed">
+			<img src="/img/user/ARVR%20Design%20Challenge/__Resources/Diagram_Learner_01C.png" alt="Diagram_Learner_01C.png" loading="lazy" />
+		</div>
+	</div>
+</div>
+<div class="canvas-node canvas-node-file canvas-node-image " data-node-id="45ff348f9e1aaeea" style="transform: translate(-7912px, 3505px); width: 4258px; height: 2415px; ">
+	<div class="canvas-node-container">
+		<div class="canvas-node-content image-embed">
+			<img src="/img/user/ARVR%20Design%20Challenge/__Resources/Diagram_Learner_02.png" alt="Diagram_Learner_02.png" loading="lazy" />
+		</div>
+	</div>
+</div>
+<div class="canvas-node canvas-node-file canvas-node-image " data-node-id="3cd4fe8260be65ec" style="transform: translate(-7912px, -200px); width: 4258px; height: 1498px; ">
+	<div class="canvas-node-container">
+		<div class="canvas-node-content image-embed">
+			<img src="/img/user/ARVR%20Design%20Challenge/__Resources/Diagram_Learner_00.png" alt="Diagram_Learner_00.png" loading="lazy" />
+		</div>
+	</div>
+</div>
+	</div>
+</div>
