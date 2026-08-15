@@ -60,8 +60,7 @@ These are the basic interactions a learner will need to handle and manipulate th
 		```C#
 		bool _canGrabWrench = Controller.InRange(Wrench) && !TorqueWrench.Equipped;
 		
-		if (_canGrabWrench && Controller.Grip(type = ActivationType.SinglePress))
-		{ Controller.EquipWrench(); }
+		if (_canGrabWrench && Controller.Grip(type = ActivationType.SinglePress)) { Controller.EquipWrench(); }
 		```
 - [ ] **Dropping the Wrench**
 	- <span style="color:rgb(138, 177, 125)">Activate</span>
@@ -72,9 +71,12 @@ These are the basic interactions a learner will need to handle and manipulate th
 		 - #AudioSFX of wind when wrench is released from hand
 		 - #AudioSFX of metal when wrench hits the ground
 	- <span style="color:rgb(0, 176, 240)">Logic Example</span>
-		- `bool _canDropWrench = Controller.IsHolding(Wrench) && !TorqueWrench.InRange(LugNut);`
-		  
-		  `if (_canDropWrench && Controller.Trigger(type = ActivationType.Hold, time = 3f)) { Controller.DropWrench(); }`
+		```C#
+		bool _canDropWrench = Controller.IsHolding(Wrench) && !TorqueWrench.InRange(LugNut);
+		
+		if (_canDropWrench && Controller.Trigger(type = ActivationType.Hold, time = 3f)) { Controller.DropWrench(); }
+		```
+
 ### 02. Interactions - Adjusting Values
 
 These interactions are mainly focused on adjusting the torque value itself and require additional, realistic manipulation of the torque wrench object.
