@@ -81,7 +81,7 @@ These are the basic interactions a learner will need to handle and manipulate th
 
 These interactions are mainly focused on adjusting the torque value itself and require additional, realistic manipulation of the torque wrench object.
 
-- [ ] **Setting Torque Value**
+- [ ] /*Setting Torque Value*/
 	- <span style="color:rgb(138, 177, 125)">Activate</span>
 		- Hold #SecondaryController_Button_Grip 
 			- While the learner has the wrench equipped, and the other hand is within range of the wrench head, holding the #SecondaryController_Button_Grip grabs the head.
