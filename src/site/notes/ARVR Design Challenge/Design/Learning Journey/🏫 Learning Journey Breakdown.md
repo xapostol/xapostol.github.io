@@ -135,7 +135,7 @@ After the learner has done all 4 wheels, they reach the `Complete`state where th
 	- <span style="color:rgb(255, 217, 140)">Effects</span>
 	    - #Visual_Dynamic UI shifts to 'Endless Mode'
 	    - #AudioSFX **car revving** sfx
-    
+
 ## Validation
 
 ### Process
