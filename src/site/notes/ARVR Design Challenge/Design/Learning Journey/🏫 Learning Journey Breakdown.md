@@ -59,7 +59,7 @@ public enum ExperienceState { Intro, GuidedExploration, Practice, Complete, Endl
 
 This first section of the training experience will focus on familiarizing the learner with the scene and tool context. This section also indicates how to check tutorial progress via the notepad on the desk or by pressing #PrimaryController_Button_YB for a UI pop-up.
 
-- [x] **Checking Progress**
+- [ ] **Checking Progress**
 	- <span style="color:rgb(138, 177, 125)">Activate</span>
 	    - 1x Press #PrimaryController_Button_YB
 	        - While in any state of the experience, the learner may open a UI wrist menu version of the 'notepad' on their primary controller wrist.
