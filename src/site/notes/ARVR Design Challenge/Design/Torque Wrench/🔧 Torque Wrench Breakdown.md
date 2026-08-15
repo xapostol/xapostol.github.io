@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/design/torque-wrench/torque-wrench-breakdown/","created":"2026-08-11T20:23:26.766-07:00","updated":"2026-08-13T18:28:00.697-07:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/design/torque-wrench/torque-wrench-breakdown/","created":"2026-08-11T20:23:26.766-07:00","dg-note-properties":{}}
 ---
 
 # Overview{ #twd-overview}
@@ -7,7 +7,7 @@
 
 This document outlines how the **Torque Wrench** should function through-out the training experience, specifically in relation to the learner and the interactive components (i.e. - lug-nuts). Any gaps or suggested improvements should be added to the [[ARVR Design Challenge/Design/Torque Wrench/🔧 Torque Wrench Breakdown#^twd-future-improvements \| Future Improvements Section]]!
 
-> [!Assumptions]
+> [!Assumptions]+
 > - For the purposes of this V1 interaction, the **Twist Torque Wrench** will be the only wrench type used.
 > - Members will be able to navigate around the experience in the standardized way ~ rotating with one hand (usually primary hand), and locomotion (teleportation or smooth locomotion) with the other (usually secondary hand).
 # Experience{ #twd-experience}
@@ -33,7 +33,9 @@ This section goes over the input/output methods a learner will use to familiariz
 
 Here's an overview of the various torque wrench states. I've also listed the anticipated constraints and how we may educate the learners on navigating them.
 
-`public enum WrenchState { Idle, AdjustingTorque, LockedOnLug, Cranking };`
+```C#
+public enum WrenchState { Idle, AdjustingTorque, LockedOnLug, Cranking };
+```
 
 | Enum              | State                                                                                                                                                                                     | Constraints/Exit                                                                                     |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -55,9 +57,12 @@ These are the basic interactions a learner will need to handle and manipulate th
 		- #Haptics_Light when wrench reaches hand
 		- #AudioSFX of blunt force when wrench reaches hand
 	- <span style="color:rgb(0, 176, 240)">Logic Example</span>
-		- `bool _canGrabWrench = Controller.InRange(Wrench) && !TorqueWrench.Equipped;`
-		  
-		  `if (_canGrabWrench && Controller.Grip(type = ActivationType.SinglePress)) { Controller.EquipWrench(); }`
+		```C#
+		bool _canGrabWrench = Controller.InRange(Wrench) && !TorqueWrench.Equipped;
+		
+		if (_canGrabWrench && Controller.Grip(type = ActivationType.SinglePress))
+		{ Controller.EquipWrench(); }
+		```
 - [ ] **Dropping the Wrench**
 	- <span style="color:rgb(138, 177, 125)">Activate</span>
 		- 3 Second Hold #PrimaryController_Thumbstick_Click 

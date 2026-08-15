@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","updated":"2026-08-14T11:29:12.181-07:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/design/learning-journey/learning-journey-breakdown/","created":"2026-08-11T21:31:32.493-07:00","dg-note-properties":{}}
 ---
 
 # Overview{ #mled-overview}
@@ -7,7 +7,7 @@
 
 This document outlines the overall training experience centered around **Torque Wrench** education. Any gaps or suggested improvements should be added to the [[ARVR Design Challenge/Design/Learning Journey/🏫 Learning Journey Breakdown#^mled-future-improvements \| Future Improvements Section]]!
 
-> [!Assumptions]
+> [!Assumptions]+
 > - Learner may move around the outlined area using their controllers (i.e. - navigate and rotate) and their body in physical space, but must stay within the designated interaction space.
 > 	- Standard movement controls: **teleport** vs **smooth locomotion** & **smooth** vs **incremented turns**.
 > - The learner has standard movement controls and can access information about the tutorial progress through #PrimaryController_Button_YB.
@@ -43,7 +43,9 @@ Multiple cars raised up in the background. Layout is busy, but follows best prac
 
 Here are the training experience states that define learner progression. These map to scene transitions and activity triggers that are explicitly indicated through visual, haptic, and audio cues.
 
-`public enum ExperienceState { Intro, GuidedExploration, Practice, Complete, Endless };`
+```C#
+public enum ExperienceState { Intro, GuidedExploration, Practice, Complete, Endless };
+```
 
 | Enum                | State                                                                                            | Constraints/Exit                                                                  |
 | ------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
@@ -82,11 +84,11 @@ This first section of the training experience will focus on familiarizing the le
 
 The second section will guide the learner through interacting with the torque wrench, teaching them how to handle and set torque values. This section actively guides the learner through tightening lug-nuts, each step hinting at the next with highlights, haptics, and audio cues.
 
-The learner will set 3 different lug-nuts, following the star pattern. It will also actively show what happens when the torque value is **under** (1st), **over** (2nd), and **right on** (3rd) the correct torque value. 
+The learner will set 3 different lug-nuts, following the star pattern. It will also actively show what happens when the torque value is **under (1st)**, **over (2nd)**, and **right on (3rd)** the correct torque value. 
 
 - [ ] **Understanding the Wrench**
 	- <span style="color:rgb(100, 250, 204)">Pre-Reqs</span>
-	    - `ExperienceState == GuidedExploration`.
+	    - `ExperienceState == GuidedExploration`
 	- <span style="color:rgb(138, 177, 125)">Activate</span>
 	    - As learner nears an interaction (i.e. - wrench or lug nut), context hints appear.
 	- <span style="color:rgb(238, 32, 77)">Deactivate</span>

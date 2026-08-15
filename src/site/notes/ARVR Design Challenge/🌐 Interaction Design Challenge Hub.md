@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/arvr-design-challenge/interaction-design-challenge-hub/","tags":["gardenEntry"],"created":"2026-08-11T14:40:42.972-07:00","updated":"2026-08-14T11:36:27.013-07:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/arvr-design-challenge/interaction-design-challenge-hub/","tags":["gardenEntry"],"created":"2026-08-11T14:40:42.972-07:00","dg-note-properties":{}}
 ---
 
 # Overview
